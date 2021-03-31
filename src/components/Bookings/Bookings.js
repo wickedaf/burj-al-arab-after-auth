@@ -16,7 +16,6 @@ const Bookings = () => {
         })
         .then(res => res.json())
         .then(data => setBookings(data))
-        console.log('http://localhost:5000/bookings?email='+loggedInUser.email);
     }, [loggedInUser]);
 
     return (
