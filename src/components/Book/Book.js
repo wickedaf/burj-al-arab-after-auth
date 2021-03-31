@@ -31,7 +31,7 @@ const Book = () => {
 
     const handleBooking = () => {
         const newBooking = {...loggedInUser, ...selectedDate};
-        fetch("http://localhost:5000/addBooking", {
+        fetch("https://still-citadel-77164.herokuapp.com/addBooking", {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(newBooking) 
